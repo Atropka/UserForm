@@ -1,5 +1,45 @@
-# Vue 3 + TypeScript + Vite
+# Account Manager App
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Универсальное приложение для управления учетными записями.  
+Реализовано на **Vue 3**, **TypeScript** и **Quasar Framework** с использованием **Pinia**.  
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+---
+
+## Особенности
+
+- Управление учетными записями с возможностью добавления, редактирования и удаления.
+- Валидация полей:
+  - Логин и пароль обязательны для локальных учетных записей.
+  - Метки вводятся через `;`, дубли не допускаются.
+- Интерактивный UI:
+  - Адаптивная верстка: **desktop** — все поля в строку; **mobile** — поля располагаются в две колонки с разделением.
+  - Анимация ошибки (`shake`) при неверных данных.
+  - Переключатель видимости пароля.
+- Уведомления об ошибках через Quasar Notify.
+
+---
+
+## Установка и запуск
+
+### Клонирование репозитория
+```bash
+git clone <your-repo-url>
+cd <project-folder>
+```
+### Установка зависимостей
+
+```
+npm install
+# или
+yarn install
+```
+
+### Запуск в режиме разработки
+
+```
+npm run dev
+# или
+yarn dev
+```
+Приложение будет доступно по адресу: http://localhost:5173
+
