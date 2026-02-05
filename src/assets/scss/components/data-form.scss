@@ -1,0 +1,122 @@
+.data-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0 !important;
+    @apply tw-gap-y-4 tw-gap-x-2;
+  }
+
+  &--inline {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .data-form-group {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &:not(.data-form--single-column, .data-form--inline) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & > div {
+      align-self: flex-start;
+    }
+  }
+
+  .data-form-expansion-group {
+    width: 100%;
+    &--disable {
+      &.data-form-expansion-group--no-label {
+        .q-item {
+          display: none;
+        }
+      }
+    }
+
+    &--dense {
+      .data-form-group {
+        padding: 0;
+      }
+    }
+
+    &--transparent {
+      background: transparent;
+    }
+  }
+
+  .data-form-field {
+    &--clear-field {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    &__date-input {
+      position: relative;
+
+      // Firefox: hide date picker calendar
+      .q-field__control-container {
+        &:after {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 90%;
+          right: 0;
+          top: 2%;
+        }
+      }
+    }
+  }
+}
+
+.card-form {
+  column-width: 45vw;
+  column-gap: 8px;
+
+  &:has(> :nth-child(2):last-child) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    align-items: start;
+  }
+
+  &--inline {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__group-wrapper {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+    break-inside: avoid; /* запрет разрыва элемента */
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px 16px !important;
+  }
+
+  &__field {
+    &--clear-field {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+  }
+}
+
+.required .q-field__label:after {
+  content: " *";
+  color: red;
+}

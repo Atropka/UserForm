@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.eslintIntegration": true,
+  "prettier.documentSelectors": ["**.{js,ts,jsx,tsx,vue}"],
+  "prettier.singleQuote": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "vue"],
+  "eslint.workingDirectories": ["src"],
+  "eslint.format.enable": true,
+  "vetur.format.enable": false
+}

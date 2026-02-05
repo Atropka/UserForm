@@ -1,0 +1,12 @@
+.q-dialog {
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  .q-card {
+    border-radius: 6px;
+    box-shadow:
+      0 4px 16px 0 rgba(0, 32, 51, 0.18),
+      0 2px 2px 0 rgba(0, 32, 51, 0.04);
+  }
+}

@@ -1,0 +1,39 @@
+.q-list {
+  gap: 4px;
+}
+
+.q-expansion-item {
+  border-radius: 6px;
+  background: var(--bg-secondary);
+
+  .q-item {
+    .q-focus-helper {
+      opacity: 0 !important;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .q-item__label {
+    color: var(--typo-secondary);
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .q-item__section .q-icon {
+    border-radius: 3px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+
+    &.q-expansion-item__toggle-icon--rotated {
+      transform: scaleY(-1);
+    }
+  }
+
+  .q-expansion-item__content > div {
+    padding: 0.5rem;
+  }
+}

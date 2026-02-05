@@ -1,0 +1,31 @@
+@use "quasar/dist/quasar.css" as *;
+
+:root {
+  --q-primary: #0078d2;
+  --q-secondary: rgba(0, 66, 105, 0.07);
+  --q-accent: rgba(0, 32, 51, 0.85);
+  --q-dark: #1d1d1d;
+  --q-positive: #22c38e;
+  --q-negative: #e60000;
+  --q-info: #31ccec;
+  --q-warning: #f2c94c;
+}
+
+.bg {
+  &-soft-20 {
+    background: var(--bg-soft-20) !important;
+  }
+}
+
+.text-color {
+  &-secondary {
+    color: var(--typo-secondary);
+  }
+}
+
+.content {
+  &-bg-soft {
+    background: var(--bg-soft-20) !important;
+    @apply tw-p-3 tw-rounded-md;
+  }
+}

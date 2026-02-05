@@ -1,0 +1,12 @@
+.q-tab {
+  padding: 0 !important;
+
+  &.q-tab--active {
+    color: var(--base) !important;
+  }
+
+  &__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

@@ -1,0 +1,11 @@
+.q-checkbox {
+  .q-checkbox__bg {
+    border-color: var(--bg-border-28);
+  }
+
+  .q-checkbox__inner--truthy {
+    .q-checkbox__bg {
+      border-color: currentColor;
+    }
+  }
+}

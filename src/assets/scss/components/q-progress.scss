@@ -1,0 +1,11 @@
+.quasar-circular-progress-blue {
+  .q-circular-progress {
+    &__track {
+      color: rgb(176 187 194) !important;
+    }
+
+    &__circle {
+      color: var(--control-ghost) !important;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.plate-list {
+  width: 260px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.plate-card {
+  background-color: var(--essential);
+  border: 2px solid var(--bg-secondary);
+  padding: 5px;
+  border-radius: 6px;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: none;
+  transition: border 0.2s ease;
+  margin-bottom: 8px;
+
+  &--selected {
+    border: 2px solid #0078d2;
+
+    .plate-card__title {
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & p {
+    font-size: 12px;
+  }
+
+  &__sub-info {
+    color: var(--typo-system);
+    margin-top: 10px;
+  }
+}

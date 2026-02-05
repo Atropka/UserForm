@@ -1,0 +1,66 @@
+@use "quasar";
+@use "tailwind";
+@use "common";
+@use "vars/colors";
+
+@use "components/q-text" as *;
+@use "components/q-btn" as *;
+@use "components/q-btn-group" as *;
+@use "components/q-field" as *;
+@use "components/q-card" as *;
+@use "components/q-tab" as *;
+@use "components/q-dialog" as *;
+@use "components/q-expansion-item" as *;
+@use "components/q-progress" as *;
+@use "components/q-toggle" as *;
+@use "components/q-checkbox" as *;
+@use "components/q-tooltip" as *;
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 10px;
+  background-color: #aaaaaa;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg-secondary);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}

@@ -1,0 +1,96 @@
+@use "bg-colors" as *;
+@use "text-colors" as *;
+
+:root {
+  /* Base colors */
+  --base: #002033;
+  --essential: #ffffff;
+  --brand: #0071b2;
+  --primary: #0078d2;
+  --system: #dee4e8;
+  --normal: #56b9f2;
+  --success: #22c38e;
+  --caution: #f2c94c;
+  --warning: #f38b00;
+  --alert: #eb5757;
+  --critical: #33000f;
+  --disabled: #9aa8b1;
+  /* Base colors end*/
+
+  /* Background colors */
+  --bg-default: #fff;
+  --bg-secondary: #ecf1f4;
+  --bg-link: #0078d2;
+  --bg-brand: #0071b2;
+  --bg-normal: #56b9f2;
+  --bg-system: #dee4e8;
+  --bg-border-20: #00416633;
+  --bg-border-28: #00426947;
+  --bg-stripe: #0020330d;
+  --bg-ghost: #00203314;
+  --bg-soft: #ffffffe5;
+  --bg-soft-20: rgba(236, 241, 244);
+  --bg-border: #00416633;
+  --bg-dark-mode: rgba(211, 211, 211, 0.2);
+  --bg-dark-mode-ligth: #ededeb;
+  --blue-grey-bg: #dce5f0;
+
+  --bg-border-hover: rgba(0, 66, 105, 0.52);
+  --bg-tone: rgba(0, 32, 51, 0.85);
+  --bg-hover: rgba(0, 66, 105, 0.05);
+
+  --bg-success-20: rgba(34, 195, 142, 0.2);
+  --bg-success-30: rgba(34, 195, 142, 0.3);
+  --bg-caution-20: rgba(242, 201, 76, 0.2);
+  --bg-caution-30: rgba(242, 201, 76, 0.3);
+  --bg-warning-20: rgba(243, 139, 0, 0.2);
+  --bg-warning-30: rgba(243, 139, 0, 0.3);
+  --bg-alert-20: rgba(235, 87, 87, 0.2);
+  --bg-alert-30: rgba(235, 87, 87, 0.3);
+  --bg-critical-20: rgba(51, 0, 15, 0.2);
+  --bg-critical-30: rgba(51, 0, 15, 0.3);
+  /* Background colors  end */
+
+  /* Typography colors */
+  --typo-primary: rgba(0, 32, 51, 0.6);
+  --typo-secondary: rgba(0, 32, 51, 0.6);
+  --typo-ghost: rgba(0, 32, 51, 0.3);
+  --typo-link-hover: #008efa;
+  --typo-link-minor: #1c5682;
+  --typo-system: #97b2c4;
+  --typo-placeholder: rgba(0, 32, 51, 0.35);
+  --typo-normal: var(--normal);
+  --typo-success: var(--success);
+  --typo-caution: var(--caution);
+  --typo-warning: var(--warning);
+  --typo-alert: var(--alert);
+  --typo-critical: var(--critical);
+  /* Typography colors end */
+
+  /* Controls colors */
+  --control-ghost: rgba(0, 57, 92, 0.8);
+  --control-ghost-bg: rgba(0, 66, 105, 0.07);
+  --control-primary-hover: #0091ff;
+  --control-disabled: rgba(0, 32, 51, 0.07);
+  --control-disabled-typo: #00203342;
+  --control-disabled-bg: rgba(0, 66, 105, 0.07);
+  /* Controls colors end*/
+
+  /* Ag-grid */
+  --ag-highlight-color: #fce4ec;
+  --ag-toolbar-bg-color: rgba(238, 238, 238, 0.5);
+  --ag-hover-color: #fafafa;
+  --ag-foreground-color: rgba(0, 0, 0, 0.38);
+  --ag-range-color-2: rgba(122, 134, 203, 0.19);
+  --ag-range-color-3: rgba(122, 134, 203, 0.27);
+  --ag-range-color-4: rgba(122, 134, 203, 0.34);
+  --ag-chip-bg-color: #e2e2e2;
+  /* Ag-grid end*/
+
+  /* Shadow */
+  --shadow-color-1: rgba(0, 0, 0, 0.2);
+  --shadow-color-2: rgba(0, 0, 0, 0.14);
+  --shadow-color-3: rgba(0, 0, 0, 0.12);
+  /* Shadow end */
+}
+

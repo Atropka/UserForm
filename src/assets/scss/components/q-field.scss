@@ -1,0 +1,127 @@
+.q-field {
+  transition-duration: 0.35s;
+  transition-delay: 0.1s;
+  transition-property: padding-bottom;
+  align-self: flex-start;
+  width: 100%;
+
+  &.q-field--required {
+    .q-field__label.no-pointer-events.absolute.ellipsis {
+      &:after {
+        content: " *";
+        color: red;
+      }
+    }
+  }
+
+  &.q-field--disabled,
+  &.q-field--readonly {
+    .q-field__inner {
+      background-color: var(--control-disabled-bg);
+    }
+    .q-field__control-container:after {
+      content: none;
+    }
+    .q-field__append {
+      display: none;
+    }
+  }
+
+  &.q-field--readonly {
+    opacity: 0.37;
+
+    .q-field__label,
+    .q-field__native {
+      color: var(--base);
+    }
+
+    &.q-field--outlined {
+      .q-field__control::before {
+        border: 1px solid var(--bg-border);
+      }
+    }
+  }
+
+  &.q-field--dense {
+    .q-field__native[type="date"] + .q-field__label,
+    .q-field__native[type="time"] + .q-field__label,
+    &.q-field--float .q-field__label {
+      transform: translateY(-40%) scale(0.85);
+    }
+  }
+
+  &--with-bottom {
+    padding-bottom: 0;
+  }
+
+  &--error {
+    transition-delay: 0s;
+    padding-bottom: 20px;
+
+    .q-field__control {
+      &::before,
+      &::after {
+        border-color: var(--alert) !important;
+      }
+    }
+
+    .q-field__label {
+      color: var(--alert) !important;
+    }
+
+    .q-field__marginal:nth-of-type(0n + 2) {
+      display: none;
+    }
+  }
+
+  &--hide-error-messages {
+    padding-bottom: 0;
+  }
+
+  &:not(.q-field--readonly) {
+    .q-field__inner {
+      background: var(--essential);
+    }
+  }
+}
+
+.q-field--outlined {
+  .q-field__control {
+    padding: 0 16px;
+  }
+
+  .q-field__control {
+    &::before {
+      border-color: var(--bg-border);
+    }
+
+    &::after {
+      border-width: 1px;
+    }
+
+    &:hover {
+      &::before {
+        border-color: var(--control-primary-hover);
+      }
+    }
+  }
+
+  &.q-field--highlighted {
+    .q-field__control::after {
+      border-color: var(--control-primary-hover);
+      border-width: 1px;
+    }
+
+    .q-field__label {
+      color: var(--control-primary-hover);
+    }
+  }
+}
+
+.q-select {
+  &.q-field--outlined {
+    .q-field__control {
+      padding: 0 8px 0 16px;
+    }
+  }
+}

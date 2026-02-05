@@ -1,0 +1,18 @@
+.q-card {
+  .q-card__section--vert {
+    padding: 12px;
+  }
+}
+
+.card-form-wrapper {
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 8px;
+  }
+  &-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 8px;
+  }
+}

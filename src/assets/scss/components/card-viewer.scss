@@ -1,0 +1,25 @@
+.card-viewer {
+  .card-viewer__content,
+  .card-viewer__modal {
+    height: 100%;
+    position: relative;
+  }
+
+  &__loader {
+    @apply pos-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  & .q-card .q-card__section--vert {
+    padding: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
