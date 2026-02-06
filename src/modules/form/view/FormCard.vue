@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { QBtn, QIcon, QInput, QSelect, useQuasar } from 'quasar'
-import type { Account } from '@/modules/form/service/formService'
+import type { AccountType } from '@/modules/form/service/formService'
 import { prepareAccount } from '@/modules/form/service/formService'
 import { useAccountsStore } from '@/store/userStore'
 
@@ -20,7 +20,7 @@ const shakeField = ref<string | null>(null)
 
 const showPassword = ref(false)  
 
-const typeOptions: Account[] = [
+const typeOptions: AccountType[] = [
   { value: 'LDAP', label: 'LDAP' },
   { value: 'LOCAL', label: 'Локальная' }
 ]
@@ -173,4 +173,5 @@ watch(isLocal, (val) => {
   padding-bottom: 0 !important;
 }
 </style>
+
 
